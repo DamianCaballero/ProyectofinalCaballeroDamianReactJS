@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.29/dist/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Document</title>
+</head>
+<body>
+    <main id="main">
+        <section class="calculadora">
+            <h1>Calculadora prestamo</h1>
+            <div>
+                <label>Nombre</label>
+                <input type="text" name="nombre" id="inputnombre" required>
+            </div>
+            <div>
+                <label>DNI</label>
+                <input type="number" name="dni" id="inputdni" required>
+            </div>
+            <div>
+                <label>Monto solicitado</label>
+                <input type="number" name="monto" id="inputmonto" required>
+            </div>
+            <div>
+                <label>Cuotas</label>
+                <select name="cuotas" id="cuotas">
+                    <option value=1>1</option>        
+                    <option value=3>3</option>        
+                    <option value=6>6</option>
+                    <option value=9>9</option>
+                    <option value=12>12</option>        
+                </select>
+            </div>
+            <div class="boton">
+                <button id="btncalcular">Calcular</button>
+            </div>
+        </section>
+        <section class="solicitud">
+            <div class="resultadoCalculadora">
+                <h2>total a pagar</h2>
+                <span id="spandeuda"></span>
+                <button id="btnsolicitar">Solicitar prestamo</button>
+            </div>
+        </section>    
+        <section class="clientes">
+            <div>
+                <h2>Lista clientes</h2>
+            </div>
+            <div>
+                <ul id="lista-clientes">
+                </ul>
+            </div>
+            <div>
+                <button id="btncargarlista">Cargar</button>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <section class="seccionDolar">
+            <div class="infoDolar">
+                <p>Para cotizaciones en dolares comunicarse al email: prestamosjs@gmail.com</p>
+            </div>
+            <div class="precioDolar">
+                <span id="dolarblue"></span>
+            </div>
+        </section>
+    </footer>
+    <script src="sweetalert2.all.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="js/Creditos.js"></script>
+</body>
+</html>

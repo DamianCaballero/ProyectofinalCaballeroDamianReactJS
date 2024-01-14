@@ -1,0 +1,67 @@
+#main {
+  display: grid;
+  justify-content: center;
+}
+#main .calculadora {
+  display: grid;
+  justify-items: center;
+}
+#main .calculadora div {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  margin: 5px;
+}
+#main .calculadora div label {
+  width: 80px;
+}
+#main .calculadora .boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main .solicitud {
+  display: grid;
+  justify-items: center;
+}
+#main .solicitud .resultadoCalculadora {
+  display: grid;
+  justify-items: center;
+}
+#main .solicitud .resultadoCalculadora button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#main .clientes {
+  display: grid;
+  justify-items: center;
+  width: 400px;
+}
+
+#footer {
+  display: grid;
+  justify-content: center;
+  margin: 50px;
+}
+#footer .seccionDolar {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  border: 1px solid;
+}
+#footer .seccionDolar .infoDolar {
+  border-bottom: 1px solid;
+}
+#footer .seccionDolar .precioDolar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  width: 200px;
+  border: 1px solid;
+  background-color: rgb(70, 228, 188);
+  border-radius: 3px;
+}
+
+/*# sourceMappingURL=estilos.css.map */
